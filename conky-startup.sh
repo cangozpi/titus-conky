@@ -1,2 +1,6 @@
+#!/bin/bash
+
 killall conky
-sleep 20s && conky -c "$HOME/.conky/Titus.conkyrc" &
+sleep 20s
+conky -d -c "$HOME/.conky/Titus.conkyrc" &
+
