@@ -192,7 +192,8 @@ ${offset 30}${color2}Storage :${color} ${alignr}${offset -10}${fs_used /home/tit
 ${offset 30}${color2}I/O Read:${color} ${alignr}${offset -10}${diskio_read /dev/sda5}${alignr}${diskiograph_read sda5 8,100}
 ${offset 30}${color2}I/O Write:${color} ${alignr}${offset -10}${diskio_write /dev/sda5}${alignr}${diskiograph_write sda5 8,100}
 ${color5}${color5}${font Roboto:size=10}N E T W O R K   ${hr 2}${font}${color}
-${color2}${offset 30}IP Address: ${color} ${alignr}${offset -10$}${addrs wlp1s0}
+${color2}${offset 30}Public IP Address: ${color} ${alignr}${offset -10$}${exec curl -s www.icanhazip.com}
+${color2}${offset 30}Private IP Address: ${color} ${alignr}${offset -10$}${addrs wlp1s0} 
 ${color2}${offset 30}Eth Up:${color} ${alignr}${offset -10$}${upspeed wlp1s0}${alignr}${upspeedgraph wlp1s0 8,100}
 ${color2}${offset 30}Eth Down:${color} ${alignr}${offset -10$}${downspeed wlp1s0}${alignr}${downspeedgraph wlp1s0 8,100}
 #${font Roboto:size=10}N V I D I A   ${hr 2}${font}
